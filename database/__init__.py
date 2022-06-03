@@ -1,1 +1,1 @@
-from postgresql import PostgreSQL
+from .postgresql import PostgreSQL
