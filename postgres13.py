@@ -3,7 +3,7 @@ from database import PostgreSQL
 
 class MyPostgres(PostgreSQL):
     def __init__(self):
-        super().__init__(db='postgres', host='localhost', user='postgres', pwd='pgAdmin', port=5433)
+        super().__init__(db='', host='', user='', pwd='', port=)
         self.cur = conn.cursor()
     
     def create_table(self, create_table_command):

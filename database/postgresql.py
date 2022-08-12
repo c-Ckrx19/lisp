@@ -20,7 +20,7 @@ class PostgreSQL(ABC):
 
     def create_database(self):
         pass
-    
+
     @abstractmethod
     def read(self):
         raise NotImplementedError
@@ -28,3 +28,6 @@ class PostgreSQL(ABC):
     @abstractmethod
     def write(self):
         raise NotImplementedError
+
+    def commit(self):
+        self.conn.commit()
